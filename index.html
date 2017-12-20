@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>UI</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <form class="form" novalidate>
+      <section id="text">
+        <label for="text1">Text Input</label>
+        <input type="text" id="text1" placeholder="placeholder-shown">
+        <label for="text2">Text Input with Validation</label>
+        <input type="text" id="text2" pattern="[a-zA-Z]+" required placeholder="placeholder-shown">
+        <label id="bad">Enter a valid username</label>
+      </section>
+      <section id="cb">
+        <label class="title">Checkbox</label>
+        <div>
+          <label id="lcb" for="cb1"></label>
+          <input type="checkbox" id="cb1" name="cb1">
+        </div>
+        <div>
+          <label id="lcb" for="cb2"></label>
+          <input type="checkbox" id="cb2" checked="checked" name="cb2">
+        </div>
+      </section>
+      <section id="r">
+        <label class="title">Radio</label>
+        <div>
+          <label id="lr" for="r1"></label>
+          <input type="radio" id="r1" name="r1">
+        </div>
+        <div>
+          <label id="lr" for="r2"></label>
+          <input type="radio" id="r2" checked="checked" name="r2">
+        </div>
+      </section>
+      <section>
+        <button type="button" id="b1">Submit</button>
+        <button type="button" id="b2">Submit</button>
+      </section>
+    </form>
+  </body>
+</html>
